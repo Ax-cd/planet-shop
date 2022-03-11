@@ -1,0 +1,88 @@
+@import 'colors';
+@import 'media-queries';
+@import 'fonts';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    // background: $bg-color;
+    background-color: red;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw-1200px) / 2);
+    position: relative;
+    z-index: 10;
+    @include tablet {
+        background-color: blue;
+    }
+
+    &__logo {
+        color: $txt-color;
+        text-decoration: none;
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        cursor: pointer;
+        @extend %align-center;
+    }
+
+    &__bars {
+        opacity: 0;
+        @include mobile {
+            opacity: 1;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: $txt-color;
+            font-size: 2rem;
+        }
+    }
+
+    &__menu {
+        @extend %align-center;
+        // text-decoration: none;
+        // text-align: center;
+        margin-right: 2.4rem;
+        @include mobile {
+            display: none;
+        }
+
+        &--links {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $txt-color;
+            margin-right: 1.6rem;
+            @extend %align-center;
+
+            &:hover {
+                text-decoration: underline;
+                transition: all 200ms ease-in;
+                color: $primary-color;
+            }
+        }
+
+        #button {
+            padding: 0.4rem;
+            border: 0.3rem solid $primary-color;
+            background-color: $primary-color;
+            &:hover {
+                transition: all 200ms ease-in;
+                background-color: $bg-color;
+            }
+
+            &--link {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: $txt-color;
+                
+                &:hover {
+                    color: $primary-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

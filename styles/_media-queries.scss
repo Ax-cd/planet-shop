@@ -1,0 +1,19 @@
+@mixin mobile {
+    // mobile: 700px and lower
+    @media screen and (max-width: 30em) {
+        @content;
+    }
+}
+@mixin tablet {
+    // tablet: tra 700px and 992px
+    @media screen and (min-width: 30em) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    // laptop: 992px and above
+    @media screen and (min-width: 90em) {
+        @content;
+    }
+}
