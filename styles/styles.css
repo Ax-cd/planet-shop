@@ -1,1 +1,113 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap");
+.navbar__logo, .navbar__menu, .navbar__menu--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background-color: red;
+  height: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100vw-1200px) / 2);
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (min-width: 30em) {
+  .navbar {
+    background-color: blue;
+  }
+}
+
+.navbar__logo {
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.navbar__bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 30em) {
+  .navbar__bars {
+    opacity: 1;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: black;
+    font-size: 2rem;
+  }
+}
+
+.navbar__menu {
+  margin-right: 2.4rem;
+}
+
+@media screen and (max-width: 30em) {
+  .navbar__menu {
+    display: none;
+  }
+}
+
+.navbar__menu--links {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  margin-right: 1.6rem;
+}
+
+.navbar__menu--links:hover {
+  text-decoration: underline;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  color: #fda312;
+}
+
+.navbar__menu #button {
+  padding: 0.4rem;
+  border: 0.3rem solid #fda312;
+  background-color: #fda312;
+}
+
+.navbar__menu #button:hover {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  background-color: white;
+}
+
+.navbar__menu #button--link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.navbar__menu #button--link:hover {
+  color: #fda312;
+  text-decoration: underline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxanium', Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+/*# sourceMappingURL=styles.css.map */
