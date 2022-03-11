@@ -10,10 +10,3 @@
         @content;
     }
 }
-
-@mixin laptop {
-    // laptop: 992px and above
-    @media screen and (min-width: 90em) {
-        @content;
-    }
-}
