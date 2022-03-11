@@ -9,9 +9,8 @@
 }
 
 .navbar {
-  background-color: red;
+  background: white;
   height: 4rem;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,12 +20,6 @@
   padding: 0.5rem calc((100vw-1200px) / 2);
   position: relative;
   z-index: 10;
-}
-
-@media screen and (min-width: 30em) {
-  .navbar {
-    background-color: blue;
-  }
 }
 
 .navbar__logo {
@@ -45,7 +38,7 @@
   .navbar__bars {
     opacity: 1;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
     color: black;
     font-size: 2rem;
