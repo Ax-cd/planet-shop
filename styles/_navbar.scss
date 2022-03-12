@@ -59,6 +59,7 @@
         #button {
             padding: 0.4rem;
             border: 0.3rem solid $primary-color;
+            border-radius: 5px;
             background-color: $primary-color;
             &:hover {
                 transition: all 200ms ease-in;
