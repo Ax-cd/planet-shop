@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  background: white;
+  background: #14213e;
   height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@
 }
 
 .navbar__logo {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 1.8rem;
   margin-left: 2rem;
@@ -38,9 +38,9 @@
   .navbar__bars {
     opacity: 1;
     position: absolute;
+    color: white;
     top: 1rem;
     right: 2rem;
-    color: black;
     font-size: 2rem;
   }
 }
@@ -58,7 +58,7 @@
 .navbar__menu--links {
   text-decoration: none;
   font-size: 1.6rem;
-  color: black;
+  color: white;
   margin-right: 1.6rem;
 }
 
@@ -85,7 +85,7 @@
 .navbar__menu #button--link {
   text-decoration: none;
   font-size: 1.6rem;
-  color: black;
+  color: #14213e;
 }
 
 .navbar__menu #button--link:hover {
@@ -94,7 +94,7 @@
 }
 
 .hero {
-  background-color: white;
+  background-color: #14213e;
 }
 
 .hero__container {
@@ -105,10 +105,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 2rem auto 0;
-  height: 90vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3rem 0;
   z-index: 1;
   width: 100%;
   max-width: 85%;
@@ -144,10 +146,12 @@
 }
 
 .hero__container--left h2 {
+  color: white;
   font-size: 2rem;
 }
 
 .hero__container--left p {
+  color: white;
   font-size: 1.6rem;
 }
 
@@ -170,7 +174,7 @@
 .hero__container--btn a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: black;
+  color: #14213e;
 }
 
 .hero__container--btn a:hover {
@@ -181,7 +185,7 @@
 .hero__container--img {
   width: 100%;
   max-width: 95%;
-  height: auto;
+  min-height: 100%;
   -webkit-animation: solarRotation 10s infinite linear;
           animation: solarRotation 10s infinite linear;
 }
@@ -214,5 +218,12 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  border: 2px solid red;
+  min-height: 100vh;
+  padding: 0;
 }
 /*# sourceMappingURL=styles.css.map */
