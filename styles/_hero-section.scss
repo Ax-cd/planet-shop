@@ -1,13 +1,15 @@
 .hero {
-    background-color: $bg-color;
+    background-color: $dark-blue;
 
     &__container {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
-        justify-content: space-around;
-        margin: 2rem auto 0;
-        height: 90vh;
+        justify-content: space-evenly;
+        margin-right: auto;
+        margin-left: auto;
+
+        padding: 3rem 0;
         z-index: 1;
         width: 100%;
         max-width: 85%;
@@ -33,9 +35,11 @@
             font-size: 3.6rem;
         }
         &--left h2 {
+            color: $white;
             font-size: 2rem;
         }
         &--left p {
+            color: $white;
             font-size: 1.6rem;
         }
 
@@ -49,13 +53,13 @@
             cursor: pointer;
             &:hover {
                 transition: all 200ms ease-in;
-                background-color: $bg-color;
+                background-color: $white;
             }
         }
         &--btn a {
             text-decoration: none;
             font-size: 1.6rem;
-            color: $txt-color;
+            color: $dark-blue;
             &:hover {
                 color: $primary-color;
                 text-decoration: underline;
@@ -65,10 +69,9 @@
         &--img {
             width: 100%;
             max-width: 95%;
-            height: auto;
+            min-height: 100%;
             animation: solarRotation 10s infinite linear;
         }
-
         @keyframes solarRotation {
             0% {
                 rotate: 0turn;

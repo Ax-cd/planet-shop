@@ -7,7 +7,7 @@
     align-items: center;
 }
 .navbar {
-    background: $bg-color;
+    background: $dark-blue;
     height: 4rem;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     z-index: 10;
 
     &__logo {
-        color: $txt-color;
+        color: $white;
         text-decoration: none;
         font-size: 1.8rem;
         margin-left: 2rem;
@@ -29,9 +29,9 @@
         @include mobile {
             opacity: 1;
             position: absolute;
+            color: $white;
             top: 1rem;
             right: 2rem;
-            color: $txt-color;
             font-size: 2rem;
         }
     }
@@ -46,7 +46,7 @@
         &--links {
             text-decoration: none;
             font-size: 1.6rem;
-            color: $txt-color;
+            color: $white;
             margin-right: 1.6rem;
             @extend %align-center;
             &:hover {
@@ -63,13 +63,13 @@
             background-color: $primary-color;
             &:hover {
                 transition: all 200ms ease-in;
-                background-color: $bg-color;
+                background-color: $white;
             }
 
             &--link {
                 text-decoration: none;
                 font-size: 1.6rem;
-                color: $txt-color;
+                color: $dark-blue;
                 &:hover {
                     color: $primary-color;
                     text-decoration: underline;
