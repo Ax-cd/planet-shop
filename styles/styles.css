@@ -72,6 +72,7 @@
 .navbar__menu #button {
   padding: 0.4rem;
   border: 0.3rem solid #fda312;
+  border-radius: 5px;
   background-color: #fda312;
 }
 
@@ -90,6 +91,117 @@
 .navbar__menu #button--link:hover {
   color: #fda312;
   text-decoration: underline;
+}
+
+.hero {
+  background-color: white;
+}
+
+.hero__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem auto 0;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 85%;
+}
+
+@media screen and (min-width: 30em) {
+  .hero__container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero__container--left {
+  width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 30em) {
+  .hero__container--left {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .hero__container--left {
+    padding: 5rem 0;
+  }
+}
+
+.hero__container--left h1 {
+  color: #fda312;
+  font-size: 3.6rem;
+}
+
+.hero__container--left h2 {
+  font-size: 2rem;
+}
+
+.hero__container--left p {
+  font-size: 1.6rem;
+}
+
+.hero__container--btn {
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border: 0.3rem solid #fda312;
+  border-radius: 5px;
+  background-color: #fda312;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero__container--btn:hover {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  background-color: white;
+}
+
+.hero__container--btn a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.hero__container--btn a:hover {
+  color: #fda312;
+  text-decoration: underline;
+}
+
+.hero__container--img {
+  width: 100%;
+  max-width: 95%;
+  height: auto;
+  -webkit-animation: solarRotation 10s infinite linear;
+          animation: solarRotation 10s infinite linear;
+}
+
+@-webkit-keyframes solarRotation {
+  0% {
+    rotate: 0turn;
+  }
+  100% {
+    rotate: 1turn;
+  }
+}
+
+@keyframes solarRotation {
+  0% {
+    rotate: 0turn;
+  }
+  100% {
+    rotate: 1turn;
+  }
 }
 
 * {

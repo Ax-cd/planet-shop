@@ -1,0 +1,81 @@
+.hero {
+    background-color: $bg-color;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2rem auto 0;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 85%;
+
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--left {
+            width: 100%;
+            line-height: 1.2;
+            @include mobile {
+                line-height: 1.5;
+            }
+            @include tablet {
+                padding: 5rem 0;
+            }
+        }
+
+        &--left h1 {
+            color: $primary-color;
+            font-size: 3.6rem;
+        }
+        &--left h2 {
+            font-size: 2rem;
+        }
+        &--left p {
+            font-size: 1.6rem;
+        }
+
+        &--btn {
+            padding: 0.4rem;
+            margin-top: 0.5rem;
+            border: 0.3rem solid $primary-color;
+            border-radius: 5px;
+            background-color: $primary-color;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                transition: all 200ms ease-in;
+                background-color: $bg-color;
+            }
+        }
+        &--btn a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $txt-color;
+            &:hover {
+                color: $primary-color;
+                text-decoration: underline;
+            }
+        }
+
+        &--img {
+            width: 100%;
+            max-width: 95%;
+            height: auto;
+            animation: solarRotation 10s infinite linear;
+        }
+
+        @keyframes solarRotation {
+            0% {
+                rotate: 0turn;
+            }
+            100% {
+                rotate: 1turn;
+            }
+        }
+    }
+}
