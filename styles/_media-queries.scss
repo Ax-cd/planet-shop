@@ -1,11 +1,9 @@
 @mixin mobile {
-    // mobile: 700px and lower
     @media screen and (max-width: 30em) {
         @content;
     }
 }
 @mixin tablet {
-    // tablet: tra 700px and 992px
     @media screen and (min-width: 30em) {
         @content;
     }
