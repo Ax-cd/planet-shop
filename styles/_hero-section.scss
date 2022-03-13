@@ -1,84 +1,79 @@
 .hero {
-    background-color: $dark-blue;
+  background-color: $dark-blue;
 
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-right: auto;
-        margin-left: auto;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0;
+    z-index: 1;
+    width: 100%;
+    max-width: 85%;
 
-        padding: 3rem 0;
-        z-index: 1;
-        width: 100%;
-        max-width: 85%;
-
-
-        @include tablet {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        &--left {
-            width: 100%;
-            line-height: 1.2;
-            @include mobile {
-                line-height: 1.5;
-            }
-            @include tablet {
-                padding: 5rem 0;
-            }
-        }
-
-        &--left h1 {
-            color: $primary-color;
-            font-size: 3.6rem;
-        }
-        &--left h2 {
-            color: $white;
-            font-size: 2rem;
-        }
-        &--left p {
-            color: $white;
-            font-size: 1.6rem;
-        }
-
-        &--btn {
-            padding: 0.4rem;
-            margin-top: 0.5rem;
-            border: 0.3rem solid $primary-color;
-            border-radius: 5px;
-            background-color: $primary-color;
-            position: relative;
-            cursor: pointer;
-            &:hover {
-                transition: all 200ms ease-in;
-                background-color: $white;
-            }
-        }
-        &--btn a {
-            text-decoration: none;
-            font-size: 1.6rem;
-            color: $dark-blue;
-            &:hover {
-                color: $primary-color;
-                text-decoration: underline;
-            }
-        }
-
-        &--img {
-            width: 100%;
-            max-width: 95%;
-            min-height: 100%;
-            animation: solarRotation 10s infinite linear;
-        }
-        @keyframes solarRotation {
-            0% {
-                rotate: 0turn;
-            }
-            100% {
-                rotate: 1turn;
-            }
-        }
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
     }
+
+    &--left {
+      width: 100%;
+      line-height: 1.2;
+      @include mobile {
+        line-height: 1.5;
+      }
+      @include tablet {
+        padding: 5rem 0;
+      }
+    }
+
+    &--left h1 {
+      color: $primary-color;
+      font-size: 3.6rem;
+    }
+    &--left h2 {
+      color: $white;
+      font-size: 2rem;
+    }
+    &--left p {
+      color: $white;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--btn {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: $dark-blue;
+      padding: 0.4rem;
+      margin-top: 0.5rem;
+      border: 0.3rem solid $primary-color;
+      border-radius: 5px;
+      background-color: $primary-color;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+        transition: all 200ms ease-in;
+        background-color: $white;
+      }
+    }
+
+    &--img {
+      width: 100%;
+      max-width: 95%;
+      min-height: 100%;
+      animation: solarRotation 10s infinite linear;
+    }
+    @keyframes solarRotation {
+      0% {
+        rotate: 0turn;
+      }
+      100% {
+        rotate: 1turn;
+      }
+    }
+  }
 }
