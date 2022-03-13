@@ -17,7 +17,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem calc((100vw-1200px) / 2);
+  padding-top: 4rem;
   position: relative;
   z-index: 10;
 }
@@ -176,19 +176,23 @@
 
 @-webkit-keyframes solarRotation {
   0% {
-    rotate: 0turn;
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   100% {
-    rotate: 1turn;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
 @keyframes solarRotation {
   0% {
-    rotate: 0turn;
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   100% {
-    rotate: 1turn;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
