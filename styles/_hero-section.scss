@@ -1,13 +1,10 @@
 .hero {
-  background-color: $dark-blue;
-
   &__container {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 6rem auto;
     padding: 3rem 0;
     z-index: 1;
     width: 100%;
