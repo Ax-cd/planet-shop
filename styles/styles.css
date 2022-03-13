@@ -74,27 +74,17 @@
   border: 0.3rem solid #fda312;
   border-radius: 5px;
   background-color: #fda312;
-}
-
-.navbar__menu #button:hover {
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  background-color: white;
-}
-
-.navbar__menu #button--link {
   text-decoration: none;
   font-size: 1.6rem;
   color: #14213e;
 }
 
-.navbar__menu #button--link:hover {
+.navbar__menu #button:hover {
   color: #fda312;
   text-decoration: underline;
-}
-
-.hero {
-  background-color: #14213e;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  background-color: white;
 }
 
 .hero__container {
@@ -108,8 +98,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 6rem auto;
   padding: 3rem 0;
   z-index: 1;
   width: 100%;
@@ -153,9 +142,13 @@
 .hero__container--left p {
   color: white;
   font-size: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero__container--btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #14213e;
   padding: 0.4rem;
   margin-top: 0.5rem;
   border: 0.3rem solid #fda312;
@@ -166,20 +159,11 @@
 }
 
 .hero__container--btn:hover {
+  color: #fda312;
+  text-decoration: underline;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
   background-color: white;
-}
-
-.hero__container--btn a {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #14213e;
-}
-
-.hero__container--btn a:hover {
-  color: #fda312;
-  text-decoration: underline;
 }
 
 .hero__container--img {
@@ -213,7 +197,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Oxanium', Arial, Helvetica, sans-serif;
+  font-family: "Oxanium", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -222,8 +206,8 @@ html {
 }
 
 body {
-  border: 2px solid red;
+  background-color: #14213e;
+  height: auto;
   min-height: 100vh;
-  padding: 0;
 }
 /*# sourceMappingURL=styles.css.map */
